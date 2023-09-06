@@ -14,9 +14,9 @@ import time
 def envia_evidencias():
     wait = 25
 
-    SENDGRID_KEY = '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'
+    SENDGRID_KEY = '<api_key>'
     sg = SendGridAPIClient(SENDGRID_KEY)
-    sender = 'ets@americastg.com'
+    sender = '<email>'
 
     # Planilha que contém os reponsáveis por receber as evidências do MOCK
     evidencia_email = pd.read_excel("P:/Python ETS/MOCK_pre_abertura/Script_Stag/email_evidencia_mock.xlsx")
@@ -31,7 +31,7 @@ def envia_evidencias():
     # Entra no site do Admin da ATG
     navegador.get(URL_Prod)
     # login_staging = ['estudart', "ericada@123"]
-    login_prod = {"username": "atg_erico", "password": "ERICO@123@studart"}
+    login_prod = {"username": "<username>", "password": "<password>"}
 
     time.sleep(5)
 
