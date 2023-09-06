@@ -30,7 +30,6 @@ def envia_evidencias():
 
     # Entra no site do Admin da ATG
     navegador.get(URL_Prod)
-    # login_staging = ['estudart', "ericada@123"]
     login_prod = {"username": "<username>", "password": "<password>"}
 
     time.sleep(5)
